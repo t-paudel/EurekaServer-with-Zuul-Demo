@@ -14,6 +14,7 @@ public class Controller {
 	Service service;
 	
 	public Address saveAddress(@RequestBody Address address) {
+		System.out.println("Address");
 		return service.saveAddress(address);
 	}
 }
