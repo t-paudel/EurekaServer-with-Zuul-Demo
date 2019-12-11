@@ -1,23 +1,17 @@
 package com.example.employee.domain;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.stereotype.Component;
-
-@Component
-@Document(collection="Address")
 public class Address {
-	@Id
-	private int id;
+	
+	private String id;
 	private String city;
 	private String state;
 	private String country;
 	private long pinCode;
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getCity() {

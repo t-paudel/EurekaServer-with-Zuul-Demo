@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Document(collection="PersonalDetails")
-public class PersonalDetails {
+public class EmployeeDetails {
 	private int empId;
 	private String firstName;
 	private String lastName;
